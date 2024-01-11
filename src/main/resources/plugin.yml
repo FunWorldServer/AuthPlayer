@@ -14,3 +14,12 @@ command:
     aliases:
       - l
       - log
+  authplayer:
+    description: AuthPlayer manage command
+    usage: /authp [help|list|unlogin]
+    aliases:
+      - ap
+      - authp
+permissions:
+  authplayer.command:
+    description: AuthPlayer manager command permission.
