@@ -1,0 +1,16 @@
+name: AuthPlayer
+version: '${project.version}'
+main: io.funworld.authplayer.AuthPlayer
+authors: [XIAOYI12]
+command:
+  register:
+    description: AuthPlayer register command.
+    usage: /reg [password] [verifyPassword]
+    aliases:
+      - reg
+  login:
+    description: AuthPlayer login command
+    usage: /login <password>
+    aliases:
+      - l
+      - log
