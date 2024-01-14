@@ -1,9 +1,11 @@
-package io.funworld.authplayer;
+package io.funworld.authplayer.service;
 
 public class AuthInfo {
     String username;
     String password;
     String email;
+
+    String uuid;
 
     public AuthInfo(){
     }
@@ -14,6 +16,10 @@ public class AuthInfo {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
     public void setEmail(String email) {
@@ -30,5 +36,9 @@ public class AuthInfo {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getUuid() {
+        return uuid;
     }
 }

@@ -20,6 +20,9 @@ command:
     aliases:
       - ap
       - authp
+  email:
+    description: AuthPlayer email command
+    usage: /email <email>
 permissions:
   authplayer.command:
     description: AuthPlayer manager command permission.

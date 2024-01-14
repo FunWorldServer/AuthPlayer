@@ -1,5 +1,6 @@
-package io.funworld.authplayer;
+package io.funworld.authplayer.service;
 
+import io.funworld.authplayer.AuthPlayer;
 import org.bukkit.entity.Player;
 
 import java.util.Set;
@@ -24,5 +25,19 @@ public class AuthService {
 
     public boolean shouldCancelListener(Player player){
         return this.not_login_players.contains(player.getUniqueId());
+    }
+
+    public void writeUserData(AuthInfo info){
+        AuthConfig.addUserData(info);
+    }
+
+    public boolean writeUserEmail(String uuid,String email){
+        return AuthConfig.addUserEmail(uuid,email);
+    }
+
+    public String getUserPassword(String username,UUID uuid){
+        AuthInfo info = AuthConfig.getUserData(uuid.toString());
+        if(info == null) return null;
+        return info.password;
     }
 }

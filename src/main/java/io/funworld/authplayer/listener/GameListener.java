@@ -1,6 +1,6 @@
 package io.funworld.authplayer.listener;
 
-import io.funworld.authplayer.AuthService;
+import io.funworld.authplayer.service.AuthService;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
